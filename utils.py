@@ -11,3 +11,8 @@ def isfive(n):
 			return True
 		else:
 			return False
+def is_prime(n):
+    for i in range(2, (n+1)//2):
+        if n%i==0:
+            return "No"
+    return "Yes"
