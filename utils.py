@@ -11,3 +11,13 @@ def isfive(n):
 			return True
 		else:
 			return False
+def is_prime(n):
+    for i in range(2, (n+1)//2):
+        if n%i==0:
+            return "No"
+    return "Yes"
+def gcd(a, b):
+    while a*b!=0:
+        a=a%b
+        return gcd(b, a)
+    return max(a, b)
