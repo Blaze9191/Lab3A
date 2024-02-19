@@ -11,3 +11,8 @@ def isfive(n):
 			return True
 		else:
 			return False
+def gcd(a, b):
+    while a*b!=0:
+        a=a%b
+        return gcd(b, a)
+    return max(a, b)
